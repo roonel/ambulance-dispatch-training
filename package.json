@@ -1,0 +1,23 @@
+{
+  "name": "ambulance-dispatch-training",
+  "version": "1.0.0",
+  "description": "Ambulance Dispatch Software for training exercises.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roonel/ambulance-dispatch-training.git"
+  },
+  "author": "Mark Fodor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roonel/ambulance-dispatch-training/issues"
+  },
+  "homepage": "https://github.com/roonel/ambulance-dispatch-training#readme",
+  "devDependencies": {
+    "electron": "^2.0.7"
+  }
+}
