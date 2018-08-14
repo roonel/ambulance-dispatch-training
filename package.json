@@ -2,10 +2,12 @@
   "name": "ambulance-dispatch-training",
   "version": "1.0.0",
   "description": "Ambulance Dispatch Software for training exercises.",
-  "main": "main.js",
+  "main": "main_process.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "webpack --mode development",
+    "serve": "electron .",
+    "bundle-start": "npm-run-all --parallel bundle serve",
+    "start": "npm run-script serve"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,21 @@
   },
   "homepage": "https://github.com/roonel/ambulance-dispatch-training#readme",
   "devDependencies": {
-    "electron": "^2.0.7"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "electron": "^1.8.2",
+    "electron-reload": "^1.2.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.10",
+    "npm-run-all": "^4.1.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  },
+  "dependencies": {
+    "dexie": "^2.0.4",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }
