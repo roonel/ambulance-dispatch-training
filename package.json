@@ -6,8 +6,8 @@
   "scripts": {
     "bundle": "webpack --mode development",
     "serve": "electron .",
-    "bundle-start": "npm-run-all --parallel bundle serve",
-    "start": "npm run-script serve"
+    "start": "npm-run-all --parallel bundle serve",
+    "soft-start": "npm run-script serve"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.10",
     "electron": "^1.8.2",
@@ -33,7 +34,10 @@
     "webpack-cli": "^2.0.11"
   },
   "dependencies": {
+    "@material-ui/core": "^1.5.0",
+    "@material-ui/icons": "^2.0.3",
     "dexie": "^2.0.4",
+    "moment": "^2.22.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   }
